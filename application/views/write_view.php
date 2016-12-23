@@ -6,7 +6,7 @@
 <head>
 
 
-  <title>Styles | Simple Life</title>
+  <title><p>Styles | Simple Life</title>
 
 
   <link rel="stylesheet" type="text/css" href="<?php echo base_url("css/content/html.css"); ?>" media="screen, projection, tv " />
