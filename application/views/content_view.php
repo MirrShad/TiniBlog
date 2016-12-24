@@ -41,29 +41,11 @@
       <h1>Coding</h1>
 
 
-      <h2>PNG Opacity</h2>
-	
-	<blockquote>
-      <p>
-        One of IE's more annoying bugs is that it doesn't support PNG opacity unless you use a big chunk of ugly code.  To create the dropshadow effect in IE, the following filter is applied in ie.css:
-      </p>
-	</blockquote>
-	
-      <h2>Column Widths</h2>
+      <?php
+		echo $blogs;
+	  ?>
 
-	<blockquote>
-      <p>
-        There are 6 different widths defined in the style sheet that allow you to customize how many columns the template has:
-      </p>
-	</blockquote>
-
-      <h2>Images</h2>
-    <blockquote>
-		<p>
-        <a href="http://fullahead.org/work/alice/" title="Visit Alice's Cabin"><img src="<?php echo base_url("images/content/photos/tn_stream.jpg"); ?>" alt="Adirondack Stream" class="floatLeft"/></a>
-        Images are fully supported using the <i>floatLeft</i> and <i>floatRight</i> classes.  Just apply one of them to the image you want to position.  Images that have link tags around them will also have a nifty rollover effect, as long as you're using a standards complients browser.
-      </p>
-	</blockquote>  
+      
     </div>
 
   </div>

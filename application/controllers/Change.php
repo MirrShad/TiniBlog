@@ -20,10 +20,13 @@ class Change extends CI_Controller {
 	function showContent()
 	{
 		$this->load->model('Database');
+		$this->load->model('ModifyDataTools');
 		$blogs = $this->Database->getAllBlogs();
+		$blogsHTML = $this->ModifyDataTools->showBlogOnContentPage($blogs);
+		$data=array('blogs'=>$blogsHTML);
 		
 		$this->load->helper(array('html', 'url'));
-		$this->load->view('content_view');
+		$this->load->view('content_view',$data);
 		
 		$this->Database->close();
 	}
