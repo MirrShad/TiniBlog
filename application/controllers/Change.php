@@ -19,12 +19,8 @@ class Change extends CI_Controller {
 	
 	function showContent()
 	{
-		$this->load->model('Database');
-		$this->load->model('ModifyDataTools');
-		$blogs = $this->Database->getAllBlogs();
-		$blogsHTML = $this->ModifyDataTools->showBlogOnContentPage($blogs);
-		$data=array('blogs'=>$blogsHTML);
-		
+		$this->load->model('ModifiedData');
+		$data = $this->ModifiedData->getAllBlogsOnContentPage();
 		$this->load->helper(array('html', 'url'));
 		$this->load->view('content_view',$data);
 		
@@ -33,7 +29,7 @@ class Change extends CI_Controller {
 	
 	function showWrite()
 	{
-		$this->load->helper(array('html', 'url','form'));	
+	/*	$this->load->helper(array('html', 'url','form'));	
 		$this->load->library('form_validation');
 		
 		$this->form_validation->set_rules('tag', 'Tag', 'required');
@@ -42,6 +38,10 @@ class Change extends CI_Controller {
 		
 		$this->form_validation->run();
 		$this->load->view('write_view');		
+	*/
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('form_validation');
+		$this->load->view('write_view',array('error' => ' ' ));
 	}
 	
 	function showContact()

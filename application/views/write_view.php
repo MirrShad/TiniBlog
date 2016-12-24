@@ -1,7 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xml:lang="en" lang="en">
 
 <head>
 
@@ -45,9 +43,7 @@
 
 
       <h1>Forms</h1>
-
-	<?php echo validation_errors(); ?>
-	<?php echo form_open('change/showWrite'); ?>
+	<?php echo form_open_multipart('form/writeValidation'); ?>
 
         <p>
           <label>Tag</label>
@@ -59,15 +55,15 @@
         </p>
 
         <p>
-          <label>Title</label>
-          <input type="text" name="title" class="width50" value="<?php echo set_value('title'); ?>"/>
-        </p>
-
-        <p>
           <label>Text</label>
           <textarea name="context" rows="20" cols="20" class="width50"><?php echo set_value('context'); ?></textarea>
         </p>
 
+		<p>
+          <label>Image</label>
+          <input type="file" name="userfile" size="20" />
+        </p>
+		
         <p>
           <label>&nbsp;</label>
           <input type="submit" value="Submit" class="button"/>
@@ -76,7 +72,8 @@
 
     </form>
 
-      
+    <?php echo $error;?>
+	<?php echo validation_errors(); ?>
 
     </div>
 
