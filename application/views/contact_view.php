@@ -6,7 +6,7 @@
 <head>
 
 
-  <title>Contact | Simple Life</title>
+  <title>Contact | Tini Blog</title>
   
   
   <link rel="stylesheet" type="text/css" href="<?php echo base_url("css/content/html.css"); ?>" media="screen, projection, tv " />
@@ -24,8 +24,8 @@
 
     <!-- #header: holds site title and subtitle -->
     <div id="header">
-      <h1><span class="big darkBrown">S</span>imple <span class="big darkBrown">L</span>ife</h1>
-      <h2><span class="highlight">Because sometimes you don't need a sidebar</span></h2>
+      <h1><span class="big darkBrown">T</span>ini <span class="big darkBrown">B</span>log</h1>
+      <h2><span class="highlight">Detailed contact information</span></h2>
     </div>
     
     
@@ -44,24 +44,24 @@
     <p>Lijun He<br/>
     	Tell:(+49)1631710669<br/>
     	Apartment 1004<br/>
-		Maria-Mitchell-Strasse 2-4<br/>
-		23562 Luebeck
+		  Maria-Mitchell-Strasse 2-4<br/>
+		  23562 Luebeck
     </p>
     
     
     <p>Zeling Wu<br/>
     	Tell:(+49)1631710664<br/>
     	Apartment 1206<br/>
-		Maria-Mitchell-Strasse 2-4<br/>
-		23562 Luebeck
+		  Maria-Mitchell-Strasse 2-4<br/>
+		  23562 Luebeck
     </p>
     
     
     <p>Zikai Zhou<br/>
     	Tell:(+49)15779808837<br/>
     	Apartment 1212<br/>
-		Maria-Mitchell-Strasse 2-4<br/>
-		23562 Luebeck
+		  Maria-Mitchell-Strasse 2-4<br/>
+		  23562 Luebeck
     </p>
     
      </div>
