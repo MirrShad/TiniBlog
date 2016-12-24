@@ -6,7 +6,7 @@
 <head>
 
 
-  <title>Styles | Simple Life</title>
+  <title>Write | Tini Blog</title>
 
 
   <link rel="stylesheet" type="text/css" href="<?php echo base_url("css/content/html.css"); ?>" media="screen, projection, tv " />
@@ -25,8 +25,8 @@
 
     <!-- #header: holds site title and subtitle -->
     <div id="header">
-      <h1><span class="big darkBrown">S</span>imple <span class="big darkBrown">L</span>ife</h1>
-      <h2><span class="highlight">Because sometimes you don't need a sidebar</span></h2>
+      <h1><span class="big darkBrown">T</span>ini <span class="big darkBrown">B</span>log</h1>
+      <h2><span class="highlight">A super place to record your feelings</span></h2>
     </div>
 
 

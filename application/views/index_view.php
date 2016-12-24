@@ -6,7 +6,7 @@
 <head>
 
 
-  <title>Introduction | Simple Life</title>
+  <title>Introduction | Tini Blog</title>
 
   <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
   <meta name="author" content="fullahead.org" />
@@ -38,8 +38,8 @@
 
     <!-- #header: holds site title and subtitle -->
     <div id="header">
-      <h1><span class="big darkBrown">S</span>imple <span class="big darkBrown">L</span>ife</h1>
-      <h2><span class="highlight">Because sometimes you don't need a sidebar</span></h2>
+      <h1><span class="big darkBrown">T</span>ini <span class="big darkBrown">B</span>log</h1>
+      <h2><span class="highlight">A super place to share your personal experiences</span></h2>
     </div>
 
 
@@ -60,7 +60,7 @@
 
       <p>
         <a href="http://fullahead.org/work/alice/" title="Visit Alice's Cabin"><img src="<?php echo base_url("images/content/photos/tn_stream.jpg"); ?>" alt="Adirondack Stream" class="floatLeft"/></a>
-        A simple, XHTML 1.0 tableless template without a default sidebar.  You can add one if you want using the custom CSS <a href="coding.html" title="Read about using them">width classes</a>, but sometimes, all you really need is one column.
+        Here you can write your daily emotions. No matter what your have experienced, you can record your feelings in the <a href="http://localhost:8080/TiniBlog/index.php/change/showWrite" title="Record your feelings now!">Write</a>, but sometimes, all you really need is just to sit down and read your life in the <a href="http://localhost:8080/TiniBlog/index.php/change/showContent" title="Recall your life experience">Content</a>.
       </p>
 
       <p>
