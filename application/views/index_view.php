@@ -72,7 +72,7 @@
 
       <!-- .footer: the site footer text, links and whatever else -->
       <p class="footer">
-        Design by <a href="http://localhost:8080/Tiniblog/index.php/change/showContact" title="Contact team members">Index</a>. With all rights reserved.
+        Designed by <a href="http://localhost:8080/Tiniblog/index.php/change/showContact" title="Contact team members">Index</a>. With all rights reserved.
       </p>
 
     </div>
