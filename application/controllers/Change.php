@@ -19,13 +19,13 @@ class Change extends CI_Controller {
 	
 	function showContent()
 	{
-		$this->load->model('Database');
-		$blogs = $this->Database->getAllBlogs();
+		//$this->load->model('Database');
+		//$blogs = $this->Database->getAllBlogs();
 		
 		$this->load->helper(array('html', 'url'));
 		$this->load->view('content_view');
 		
-		$this->Database->close();
+		//$this->Database->close();
 	}
 	
 	function showWrite()
