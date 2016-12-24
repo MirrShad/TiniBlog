@@ -40,4 +40,10 @@ class Change extends CI_Controller {
 		$this->form_validation->run();
 		$this->load->view('write_view');		
 	}
+	
+	function showContact()
+	{
+		$this->load->helper(array('html', 'url'));
+		$this->load->view('contact_view');
+	}
 }
