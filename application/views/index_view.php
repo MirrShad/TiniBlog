@@ -35,51 +35,44 @@
       <h2><span class="highlight">A super place to share your personal experiences</span></h2>
     </div>
 
-
-
     <!-- #menu: topbar menu of the site.  Use the helper classes .two, .three, .four and .five to set
                 the widths for 2, 3, 4 and 5 item menus. -->
     <ul id="menu" class="four">
       <li><a href="<?php echo current_url(); ?>" title="An intro to Simple Life" class="here"><span class="big">I</span>ntro</a></li>
       <li><a href="<?php echo base_url(); ?>index.php/change/showContent" title="Coding tips"><span class="big">C</span>ontent</a></li>
       <li><a href="<?php echo base_url();?>index.php/change/showWrite" title="See the tags in action"><span class="big">W</span>rite</a></li>
-      <li><a href="http://fullahead.org/contact.html" title="Get in touch"><span class="big">C</span>ontact</a></li>
+      <li><a href="<?php echo base_url();?>index.php/change/showContact" title="Get in touch"><span class="big">C</span>ontact</a></li>
     </ul>
 
     <!-- #page: holds all page content, as well as footer -->
     <div id="page">
 
       <h1>Introduction</h1>
-
       <p>
-        <a href="http://fullahead.org/work/alice/" title="Visit Alice's Cabin"><img src="<?php echo base_url("images/content/photos/tn_stream.jpg"); ?>" alt="Adirondack Stream" class="floatLeft"/></a>
+        <a title="FHL, http://www.deutschlandstipendium.de/intern/system/upload/images/FH_Luebeck.jpg, last access date 12/24/2016"><img src="<?php echo base_url("images/content/photos/fhl.jpg"); ?>" alt="Adirondack Stream" class="floatLeft"/></a>
         Here you can write your daily emotions. No matter what your have experienced, you can record your feelings in the <a href="http://localhost:8080/TiniBlog/index.php/change/showWrite" title="Record your feelings now!">Write</a>, but sometimes, all you really need is just to sit down and read your life in the <a href="http://localhost:8080/TiniBlog/index.php/change/showContent" title="Recall your life experience">Content</a>.
       </p>
 
       <p>
-        The template displays properly in all the usual browsers, with an added filter hack to get .png opacity working in IE.  If you look in the html source near the top, you'll see a <acronym title="A way to control how IE reads code">conditional comment</acronym> that loads a style sheet for IE 5.0 and up.  You can get rid of this, and everything will still work, except you'll loose the purty content dropshadow.
+        <a href="https://www.codeigniter.com/" title="CodeIgniter, http://phoenixcoded.com/images/codeigniter_logo.png, last access date 12/24/2016"><img src="<?php echo base_url("images/content/photos/codeigniter_logo.png"); ?>" alt="Inside Alice's Cabin" class="floatRight"/></a>
+        CodeIgniter is an Application Development Framework - a toolkit - for people who build web sites using PHP. Its goal is to enable you to develop projects much faster by providing a rich set of libraries for commonly needed tasks, as well as a simple interface and logical structure to access these libraries.
       </p>
 
       <ul>
-        <li><b>Gecko</b> <i>deeee</i>licious</li>
-        <li><b>Opera</b> like hotdogs</li>
-        <li><b>Safari</b> wouldn't say no to 2nds</li>
-        <li><b>Internet Explorer</b> it tastes like burning...</li>
+        <li><b>MVC Based System</b> <i></i> </li>
+        <li><b>Extremely Light Weight</b> </li>
+        <li><b>Form and Data Validation</b> </li>
+        <li><b>Unit Testing Class</b> </li>
       </ul>
 
       <p>
-        <a href="http://fullahead.org/work/alice/" title="Visit Alice's Cabin"><img src="<?php echo base_url("images/content/photos/tn_inside.jpg"); ?>" alt="Inside Alice's Cabin" class="floatRight"/></a>
-        Total image size of this template comes in just under the new 60kb limit of <acronym title="Open Web Design">OWD</acronym>, so enjoy.  It's nice to have a little more wiggle room with the templates.  Maybe next we could work on getting Javascript?
-      </p>
-
-      <p>
-        This design started out as the promo site for a friend's cottage.  If you're curious about the original, check out <a href="http://fullahead.org/work/alice/" title="Visit Alice's Cabin">Alice's Cabin</a>.
+        This design started out as the demo website for the most special features of CodeIgnitor. If you're curious about more info, check out in <a href="https://www.codeigniter.com/user_guide/tutorial/index.html" title="Visit CodeIgnitor tutorial">its tutorial</a>.
       </p>
 
 
       <!-- .footer: the site footer text, links and whatever else -->
       <p class="footer">
-        Design by <a href="http://fullahead.org" title="Visit FullAhead">FullAhead</a>.  Valid CSS &amp; XHTML with no rights reserved.
+        Design by <a href="http://localhost:8080/Tiniblog/index.php/change/showContact" title="Contact team members">Index</a>. With all rights reserved.
       </p>
 
     </div>

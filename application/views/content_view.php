@@ -32,7 +32,7 @@
       <li><a href="<?php echo base_url();?>index.php/change/showIndex" title="An intro to Simple Life"><span class="big">I</span>ntro</a></li>
       <li><a href="<?php echo current_url(); ?>" title="Coding tips" class="here"><span class="big">C</span>ontent</a></li>
       <li><a href="<?php echo base_url();?>index.php/change/showWrite" title="See the tags in action"><span class="big">W</span>rite</a></li>
-      <li><a href="http://fullahead.org/contact.html" title="Get in touch"><span class="big">C</span>ontact</a></li>
+      <li><a href="<?php echo base_url();?>index.php/change/showContact" title="Get in touch"><span class="big">C</span>ontact</a></li>
     </ul>
 
     <!-- #page: holds all page content, as well as footer -->
