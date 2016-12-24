@@ -19,7 +19,7 @@ class Change extends CI_Controller {
 	
 	function showContent()
 	{
-		//$this->load->model('Database');
+		$this->load->model('Database');
 		$this->load->model('ModifyDataTools');
 		$blogs = $this->Database->getAllBlogs();
 		$blogsHTML = $this->ModifyDataTools->showBlogOnContentPage($blogs);
