@@ -52,9 +52,9 @@
         <p>
           <label>Tag</label>
           <select name="tag" value="<?php echo set_value('tag'); ?>">
-            <option value="1">Ottawa</option>
-            <option value="2">Calgary</option>
-            <option value="3">Moosejaw</option>
+            <option value="1">Life</option>
+            <option value="2">Coding</option>
+            <option value="3">Else</option>
           </select>
         </p>
 
