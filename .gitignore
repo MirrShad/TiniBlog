@@ -27,3 +27,5 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.sublime-project
 
 application/views/write_view.php
+.buildpath
+.project
