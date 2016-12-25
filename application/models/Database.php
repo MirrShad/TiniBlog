@@ -29,14 +29,22 @@ class Database extends CI_Model {
 	public function addNewBlog($newBlog)
 	{
 		$query = $this->db->query('SELECT MAX(ID) AS max FROM articles');
-		$maxID = $query->result()[0]->max+1;
+		$insertID = $query->result()[0]->max+1;
 		
 		$data = array(
-        'ID' => $maxID,
+        'ID' => $insertID,
         'TAG' => $newBlog['tag'],
         'TEXT' => $newBlog['context']
 		);
 		$this->db->insert('articles', $data);
+		
+		return array($this->db->affected_rows(),$insertID);
+	}
+	
+	public function deleteBlog($BlogID)
+	{
+		$this->db->delete('articles', array('ID' => $BlogID));
+		return $this->db->affected_rows();
 	}
 	
 	function close()
