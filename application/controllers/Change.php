@@ -29,16 +29,6 @@ class Change extends CI_Controller {
 	
 	function showWrite()
 	{
-	/*	$this->load->helper(array('html', 'url','form'));	
-		$this->load->library('form_validation');
-		
-		$this->form_validation->set_rules('tag', 'Tag', 'required');
-		$this->form_validation->set_rules('title', 'Title', 'trim|required|alpha_numeric');
-		$this->form_validation->set_rules('context', 'Text', 'trim|required');
-		
-		$this->form_validation->run();
-		$this->load->view('write_view');		
-	*/
 		$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
 		$this->load->view('write_view',array('error' => ' ' ));

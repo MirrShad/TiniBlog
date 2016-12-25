@@ -26,6 +26,19 @@ class Database extends CI_Model {
 		return $blogs;
 	}
 	
+	public function addNewBlog($newBlog)
+	{
+		$query = $this->db->query('SELECT MAX(ID) AS max FROM articles');
+		$maxID = $query->result()[0]->max+1;
+		
+		$data = array(
+        'ID' => $maxID,
+        'TAG' => $newBlog['tag'],
+        'TEXT' => $newBlog['context']
+		);
+		$this->db->insert('articles', $data);
+	}
+	
 	function close()
 	{
 		$this->db->close();

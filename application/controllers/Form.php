@@ -45,6 +45,8 @@ class Form extends CI_Controller {
 				$file_fail=FALSE;
 			}
 			
+			
+			//change to another view or stay to collect errors
 			if($form_fail||$file_fail)
 			{
 				$error = array('error' => ' ' );
@@ -56,6 +58,11 @@ class Form extends CI_Controller {
 			}
 			else
 			{
+				//insert another blog to the database/
+				$newBlog = array('tag' => $this->input->post('tag'),'context' => $this->input->post('context'));
+				$this->load->model('Database');
+				$this->Database->addNewBlog($newBlog);
+				//change to another view
 				$this->load->helper(array('html', 'url'));
 				$this->load->model('ModifiedData');
 				$data = $this->ModifiedData->getAllBlogsOnContentPage();
