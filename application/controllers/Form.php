@@ -32,7 +32,7 @@ class Form extends CI_Controller {
 		$this->form_validation->set_rules('tag', 'Tag', 'required');
 		$this->form_validation->set_rules('context', 'Text', 'trim|required');
 		
-		$file_fail=TRUE;
+		$form_fail=TRUE;
 		$file_fail=TRUE;
 		if ($this->form_validation->run() == FALSE)
         {
@@ -53,7 +53,7 @@ class Form extends CI_Controller {
 		{
 			/*the case form is valid but file upload failed*/
 			$file_fail=TRUE;
-			if($this->upload->data('file_size')==null)
+			if(($this->upload->data('file_size')==null)&&($_FILES["userfile"]["name"]==null))
 			{
 				/*the case form is valid and no file is uploaded which is valid */
 				$file_fail=FALSE;
@@ -74,10 +74,7 @@ class Form extends CI_Controller {
 		{
 			/*the case there are errors */
 			$error = array('error' => ' ' );
-			if($this->upload->data('file_size')!=null)
-			{
-				$error = array('error' => $this->upload->display_errors());
-			}
+			$error = array('error' => $this->upload->display_errors());
 			
 			/*load the error_view */
 			$this->load->view('write_view', $error);
@@ -97,6 +94,7 @@ class Form extends CI_Controller {
 			$data = $this->ModifiedData->getAllBlogsOnContentPage();
 			$this->load->view('content_view',$data);
 		}
+		
 	}
 		
 }

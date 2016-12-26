@@ -24,8 +24,8 @@ class ModifyImage extends CI_Model {
 		$config['source_image'] = $imagePath;
 		$config['create_thumb'] = TRUE;
 		$config['maintain_ratio'] = TRUE;
-		$config['width']         = 75;
-		$config['height']       = 50;
+		$config['width']         = 120;
+		$config['height']       = 90;
 			
 		$this->load->library('image_lib', $config);
 			

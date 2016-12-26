@@ -1,10 +1,7 @@
-<?
-/**
-*This is a php page to show the apparence of contact information (the forth view)
-*@name contact_view.php
-*@version 26/12/2016 1.0
-*@author Lijun He
-*/
+<!-- *This is a php page to show the apparence of contact information (the forth view) -->
+<!-- *@name contact_view.php -->
+<!-- *@version 26/12/2016 1.0 -->
+<!-- *@author Lijun He -->
 <html>
 <head>
 
