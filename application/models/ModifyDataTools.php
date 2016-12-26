@@ -45,8 +45,6 @@ class ModifyDataTools extends CI_Model {
 				$image_properties = array(
 					'src'   => 'images/'.$blog['IMAGE'],
 					'class' => 'floatLeft',
-					'width' => '110',
-					'height'=> '80',
 				);
 				$blogHTML=$blogHTML.img($image_properties);
 				
@@ -55,7 +53,7 @@ class ModifyDataTools extends CI_Model {
 			}
 			$blogHTML = $blogHTML.$blog['TEXT'];
 			$blogHTML = $blogHTML.'<br><b class="highlight floatRight">'.$tempTag.'</b>';
-			$blogHTML = $blogHTML.'<br></p></blockquote><br>';
+			$blogHTML = $blogHTML.'<br></p></blockquote><br><br>';
 			
 			$blogsHTML=$blogsHTML.$blogHTML;
 			
