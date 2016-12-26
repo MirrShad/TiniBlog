@@ -25,10 +25,7 @@ class ModifyDataTools extends CI_Model {
 			{
 				$tempTag='Else';
 			}
-			$blogHTML = '<h2>';
-			$blogHTML = $blogHTML.$tempTag;
-			$blogHTML = $blogHTML.'</h2>';
-			$blogHTML = $blogHTML.'<blockquote><p>';
+			$blogHTML = '<blockquote><p>';
 			if($blog['IMAGE']!=null){
 				$blogHTML = $blogHTML.'<a>';
 				
@@ -44,7 +41,8 @@ class ModifyDataTools extends CI_Model {
 				$blogHTML = $blogHTML.'</a>';
 			}
 			$blogHTML = $blogHTML.$blog['TEXT'];
-			$blogHTML = $blogHTML.'</p></blockquote>';
+			$blogHTML = $blogHTML.'<br><b class="highlight floatRight">'.$tempTag.'</b>';
+			$blogHTML = $blogHTML.'<br></p></blockquote><br>';
 			
 			$blogsHTML=$blogsHTML.$blogHTML;
 			
