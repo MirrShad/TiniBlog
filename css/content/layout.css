@@ -69,9 +69,6 @@
   color: #6E310B;
 }
 
-
-
-
 /**************************************************************
    #menu: The top level site menu
  **************************************************************/
@@ -277,15 +274,15 @@ ul.bigLinks li a:hover span.desc {
 .clear {
   clear: both;
 }
-
+/*
 .block {
   display: block;
 }
-
+*/
 .big {
   font-size: 1.3em;  
 }
-
+/*
 .small {
   font-size: 0.85em;  
 }
@@ -305,18 +302,18 @@ ul.bigLinks li a:hover span.desc {
 .green {
   color: #82C048;
 }
-
+*/
 .darkBrown {
   color: #512103;
 }
 
-
+/*
 .greenBg {
   padding: 0 10px;
   background-color: #F1FFE3;
   border-bottom: 1px solid #B8E78B;
 }
-
+*/
 .highlight {
   padding: 1px 2px;
   background: #D9F5EC;

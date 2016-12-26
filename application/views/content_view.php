@@ -38,7 +38,7 @@
     <!-- #page: holds all page content, as well as footer -->
     <div id="page">
 
-      <h1>Content</h1>
+      <h1>Past Experiences</h1>
 
 
       <?php
