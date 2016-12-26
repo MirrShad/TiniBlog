@@ -38,10 +38,10 @@
       <li><a href="<?php echo current_url(); ?>" title="Get in touch" class="here"><span class="big">C</span>ontact</a></li>
     </ul>
 
-    <h1>Contact Info</h1>
-
     <!-- #page: holds all page content, as well as footer -->
     <div id="page">
+
+    <h1>Contact Info</h1>
     
     <p>Lijun He<br/>
     	Tell:(+49)1631710669<br/>
