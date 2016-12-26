@@ -48,18 +48,19 @@
     <div id="page">
 
       <h1>Introduction</h1>
-      <p>
+      <p align="justify">
         <a href="http://www.deutschlandstipendium.de/intern/system/upload/images/FH_Luebeck.jpg" title="FHL, http://www.deutschlandstipendium.de/intern/system/upload/images/FH_Luebeck.jpg, last access date 12/24/2016"><img src="<?php echo base_url("images/content/photos/fhl.jpg"); ?>" alt="Adirondack Stream" class="floatLeft"/></a>
         Here you can write your daily emotions. No matter what your have experienced, you can record your feelings in the <a href="http://localhost:8080/TiniBlog/index.php/change/showWrite" title="Record your feelings now!">Write</a>, but sometimes, all you really need is just to sit down and read your life in the <a href="http://localhost:8080/TiniBlog/index.php/change/showContent" title="Recall your life experience">Content</a>.
       </p>
 
-      <p>
+      <p align="justify">
         <a href="https://www.codeigniter.com/" title="CodeIgniter, http://phoenixcoded.com/images/codeigniter_logo.png, last access date 12/24/2016"><img src="<?php echo base_url("images/content/photos/codeigniter_logo.png"); ?>" alt="Inside Alice's Cabin" class="floatRight"/></a>
-        CodeIgniter is an Application Development Framework - a toolkit - for people who build web sites using PHP. Its goal is to enable you to develop projects much faster by providing a rich set of libraries for commonly needed tasks, as well as a simple interface and logical structure to access these libraries.
+        CodeIgniter is an open source Application Development Framework - a toolkit - for people who build web sites using PHP. Its goal is to enable you to develop projects much faster by providing a rich set of libraries for commonly needed tasks, as well as a simple interface and logical structure to access these libraries.
+        <acronym title="Reference: https://www.codeigniter.com/user_guide/general/welcome.html, 12/25/2016">[1]</acronym>
       </p>
 
       <ul>
-        <li><b>MVC Based System</b> <i></i> </li>
+        <li><b>MVC Based System</b> </li>
         <li><b>Extremely Light Weight</b> </li>
         <li><b>Form and Data Validation</b> </li>
         <li><b>Unit Testing Class</b> </li>

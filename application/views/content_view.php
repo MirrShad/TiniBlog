@@ -38,7 +38,7 @@
     <!-- #page: holds all page content, as well as footer -->
     <div id="page">
 
-      <h1>Coding</h1>
+      <h1>Content</h1>
 
 
       <?php
