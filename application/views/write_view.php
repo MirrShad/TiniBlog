@@ -44,7 +44,8 @@
 
       <h1>Feelings</h1>
 	<?php echo form_open_multipart('form/writeValidation'); ?>
-
+	<?php echo $error;?>
+	<?php echo validation_errors() ?>
         <p>
           <label>Tag</label>
           <select name="tag" value="<?php echo set_value('tag'); ?>">
@@ -71,10 +72,6 @@
         </p>
 
     </form>
-
-    <?php echo $error;?>
-	<?php echo validation_errors(); ?>
-
     </div>
 
   </div>
