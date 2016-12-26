@@ -1,4 +1,11 @@
 <?php
+/**
+*This ia a chass in model which contains some tools to modify date
+*@name modifyDataTools.php
+*@version 26/12/2016 1.0
+*@author Lijun He && Zeling Wu
+*@module the class ModifyDataTools is contained in CI_Model
+*/
 class ModifyDataTools extends CI_Model {
 	
 	function __construct()
@@ -6,6 +13,11 @@ class ModifyDataTools extends CI_Model {
 		parent::__construct();
 	}
 	
+	/*
+	*This is a function to show the Blog on content_view
+	*@param array $blogs which contains string ID, string Tag, string TEXT, string IMAGE
+	*@return string $blogsHTML which is HTML code present all blogs
+	*/
 	function showBlogOnContentPage($blogs)
 	{
 		$this->load->helper('html');
@@ -13,6 +25,7 @@ class ModifyDataTools extends CI_Model {
 		$blogsHTML = '';
 		foreach($blogs as $blog)
 		{	
+			/*judge the Tag*/
 			if($blog['TAG']==1)
 			{
 				$tempTag='Life';
@@ -32,8 +45,6 @@ class ModifyDataTools extends CI_Model {
 				$image_properties = array(
 					'src'   => 'images/'.$blog['IMAGE'],
 					'class' => 'floatLeft',
-					'width' => '110',
-					'height'=> '80',
 				);
 				$blogHTML=$blogHTML.img($image_properties);
 				
@@ -42,7 +53,7 @@ class ModifyDataTools extends CI_Model {
 			}
 			$blogHTML = $blogHTML.$blog['TEXT'];
 			$blogHTML = $blogHTML.'<br><b class="highlight floatRight">'.$tempTag.'</b>';
-			$blogHTML = $blogHTML.'<br></p></blockquote><br>';
+			$blogHTML = $blogHTML.'<br></p></blockquote><br><br>';
 			
 			$blogsHTML=$blogsHTML.$blogHTML;
 			
@@ -50,15 +61,24 @@ class ModifyDataTools extends CI_Model {
 		return $blogsHTML;
 	}
 	
+	/*
+	*This is a function to post the new Blog
+	*@param string $tag which is the tag 
+	*@param string $context which is the context text 
+	*@param array $imgInfoArray which contains all the information of image which is an Array
+	*@return array $newBlog which is an array contains string tag, string context, string image(the imagepath), bool imagepath(if exist the imagepath)
+	*/
 	function postNewBlog($tag,$context,$imgInfoArray)
 	{
 		if($imgInfoArray['file_size']==null)
 		{
+			/*the case there is no image*/
 			$image = null;
 			$imagePath = FALSE ;
 			$newBlog = array('tag' => $tag,'context' => $context,'imagePath' =>$imagePath);
 		}
 		else {
+			/*the case there is a image which has been uploaded*/
 			$type = $imgInfoArray['file_ext'] ;
 			$image = "database/" . $imgInfoArray['file_name'];
 			$image = str_replace("$type","_thumb".$type,"$image");

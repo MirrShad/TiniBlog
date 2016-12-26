@@ -1,4 +1,8 @@
-<!-- -->
+<!-- *This is a php page to show the apparence of write information page(the third view) -->
+<!-- *@name write_view.php -->
+<!-- *@version 26/12/2016 1.0 -->
+<!-- *@author Lijun He -->
+<html>
 <head>
 
   <title>Write | Tini Blog</title>
