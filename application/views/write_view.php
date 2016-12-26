@@ -1,11 +1,7 @@
-
-<html xml:lang="en" lang="en">
-
+<!-- -->
 <head>
 
-
   <title>Write | Tini Blog</title>
-
 
   <link rel="stylesheet" type="text/css" href="<?php echo base_url("css/content/html.css"); ?>" media="screen, projection, tv " />
   <link rel="stylesheet" type="text/css" href="<?php echo base_url("css/content/layout.css"); ?>" media="screen, projection, tv" />
@@ -42,7 +38,7 @@
     <div id="page">
 
 
-      <h1>Forms</h1>
+      <h1>Feelings</h1>
 	<?php echo form_open_multipart('form/writeValidation'); ?>
 
         <p>
