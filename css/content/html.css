@@ -5,6 +5,7 @@
  **************************************************************/
 
 /* Forces horizontal scrollbar on in Mozilla */
+/*
 html {
   margin-bottom: 1px;
 }
@@ -13,7 +14,8 @@ html,
 body {
   height: 100%;
 }
-
+*/
+/*
 body {
   margin: 0;
   padding: 0;
@@ -25,6 +27,7 @@ body {
   background: url(../../images/content/bg/body.jpg) repeat top left;
   color: #6D6864;
 }
+*/
 
 h1, h2/*, h3, h4, h5, h6, p, dl*/ {
   margin: 0;
@@ -53,21 +56,7 @@ h4 {
   text-transform: uppercase;
 }
 */
-a {
-  text-decoration: none;
-  color: #5E9040;  
-  border-bottom: 1px solid #B8E78B;
-}
 
-a:visited {
-  background-color: #F1FFE3;
-}
-
-a:hover {
-  color: #3C5D29;
-  background-color: #F1FFE3;
-  border-bottom: 1px solid #4A6E35;
-}
 /*
 ol {  
   margin: 10px 30px;
@@ -83,22 +72,7 @@ ol span {
   color: #6D6864;
 }
 */
-ul {
-  margin: 10px 30px;
-  padding: 0 30px 0 5px;
-  list-style: none;
-}
 
-ul li {
-  padding-left: 25px;
-  background: url(../../images/content/bg/bullet.gif) no-repeat;
-  background-position: 0 3px;
-}
-
-acronym {
-  cursor: help;
-  border-bottom: 1px solid #DDD;
-}
 /*
 blockquote {
   margin: 10px 0;
@@ -177,13 +151,7 @@ tbody tr:hover {
    Form Elements
  **************************************************************/
 
-label {
-  float: left;
-  text-align: right;
-  width: 9em;
-  padding-right: 1em;
-  
-}
+
 
 
 input,
@@ -222,10 +190,6 @@ input.button {
   border-color: #B8E78B #2D5018 #2D5018 #B8E78B;
 }
 
-.required {
-  cursor: help;
-  border-bottom: 1px solid #CCC;
-}
 
 
 
