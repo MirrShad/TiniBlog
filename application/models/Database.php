@@ -31,11 +31,22 @@ class Database extends CI_Model {
 		$query = $this->db->query('SELECT MAX(ID) AS max FROM articles');
 		$insertID = $query->result()[0]->max+1;
 		
-		$data = array(
-        'ID' => $insertID,
-        'TAG' => $newBlog['tag'],
-        'TEXT' => $newBlog['context']
-		);
+		if ($newBlog['imagePath'])
+		{
+			$data = array(
+        	'ID' => $insertID,
+        	'TAG' => $newBlog['tag'],
+       		'TEXT' => $newBlog['context'],
+			'IMAGE' => $newBlog['image']
+			);
+		}
+		else 
+		{
+			$data = array(
+					'ID' => $insertID,
+					'TAG' => $newBlog['tag'],
+					'TEXT' => $newBlog['context']);
+		}
 		$this->db->insert('articles', $data);
 		
 		return array($this->db->affected_rows(),$insertID);

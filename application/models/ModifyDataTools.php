@@ -49,4 +49,22 @@ class ModifyDataTools extends CI_Model {
 		}
 		return $blogsHTML;
 	}
+	
+	function postNewBlog($tag,$context,$imgInfoArray)
+	{
+		if($imgInfoArray['file_size']==null)
+		{
+			$image = null;
+			$imagePath = FALSE ;
+			$newBlog = array('tag' => $tag,'context' => $context,'imagePath' =>$imagePath);
+		}
+		else {
+			$type = $imgInfoArray['file_ext'] ;
+			$image = "database/" . $imgInfoArray['file_name'];
+			$image = str_replace("$type","_thumb".$type,"$image");
+			$imagePath = TRUE ;
+			$newBlog = array('tag' => $tag,'context' => $context,'image' =>$image,'imagePath' =>$imagePath);
+		}
+		return $newBlog ;
+	}
 }
