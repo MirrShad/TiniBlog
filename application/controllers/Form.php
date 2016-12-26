@@ -2,6 +2,14 @@
 
 class Form extends CI_Controller {
 
+	
+	function __construct()
+	{
+		parent::__construct();
+		$this->load->database();
+	}
+	
+	
         public function index()
         {
         }
@@ -31,7 +39,7 @@ class Form extends CI_Controller {
 			$config['upload_path']          = './images/database/';
 			$config['allowed_types']        = 'gif|jpg|png|jpeg';
 			$this->load->library('upload', $config);
-			
+			$this->load->model('ModifyImage');
 			if(($form_fail!=FALSE)||(! $this->upload->do_upload('userfile')))
 			{
 				$file_fail=TRUE;
@@ -43,6 +51,7 @@ class Form extends CI_Controller {
 			else
 			{
 				$file_fail=FALSE;
+				$this->ModifyImage->thrumImage($this->upload->data('full_path'));
 			}
 			
 			
@@ -58,8 +67,9 @@ class Form extends CI_Controller {
 			}
 			else
 			{
+				$this->load->model('ModifyDataTools');
+				$newBlog = $this->ModifyDataTools->postNewBlog($this->input->post('tag'),$this->input->post('context'),$this->upload->data());
 				//insert another blog to the database/
-				$newBlog = array('tag' => $this->input->post('tag'),'context' => $this->input->post('context'));
 				$this->load->model('Database');
 				$this->Database->addNewBlog($newBlog);
 				//change to another view
@@ -69,4 +79,5 @@ class Form extends CI_Controller {
 				$this->load->view('content_view',$data);
 			}
 		}
+		
 }
