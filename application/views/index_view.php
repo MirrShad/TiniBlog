@@ -1,10 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+<!-- 
+**************************************************************
+   AUTHOR:  Zikai Zhou
+   DATE:    12/26/2016 
+   PURPOSE: Show the appearance of Introduction page
+**************************************************************
+-->
 <head>
-
 
   <title>Introduction | Tini Blog</title>
 
@@ -19,7 +20,6 @@
   <link rel="stylesheet" type="text/css" href="<?php echo base_url("css/content/layout.css"); ?>" media="screen, projection, tv " />
 
 </head>
-
 
 <body>
 
@@ -50,7 +50,7 @@
       <h1>Introduction</h1>
       <p align="justify">
         <a href="http://www.deutschlandstipendium.de/intern/system/upload/images/FH_Luebeck.jpg" title="FHL, http://www.deutschlandstipendium.de/intern/system/upload/images/FH_Luebeck.jpg, last access date 12/24/2016"><img src="<?php echo base_url("images/content/photos/fhl.jpg"); ?>" alt="Adirondack Stream" class="floatLeft"/></a>
-        Here you can write your daily emotions. No matter what your have experienced, you can record your feelings in the <a href="<?php echo base_url();?>index.php/change/showWrite" title="Record your feelings now!">Write</a>, but sometimes, all you really need is just to sit down and read your life in the <a href="<?php echo base_url(); ?>index.php/change/showContent" title="Recall your life experience">Content</a>.
+        Here you can write your daily emotions. No matter what your have experienced, you can record your feelings in the <a href="http://localhost:8080/TiniBlog/index.php/change/showWrite" title="Record your feelings now!">Write</a>, but sometimes, all you really need is just to sit down and read your life in the <a href="http://localhost:8080/TiniBlog/index.php/change/showContent" title="Recall your life experience">Content</a>.
       </p>
 
       <p align="justify">
