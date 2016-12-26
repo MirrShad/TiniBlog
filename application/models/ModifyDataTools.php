@@ -47,12 +47,11 @@ class ModifyDataTools extends CI_Model {
 					'class' => 'floatLeft',
 				);
 				$blogHTML=$blogHTML.img($image_properties);
-				
-				
+								
 				$blogHTML = $blogHTML.'</a>';
 			}
 			$blogHTML = $blogHTML.$blog['TEXT'];
-			$blogHTML = $blogHTML.'<br><b class="highlight floatRight">'.$tempTag.'</b>';
+			$blogHTML = $blogHTML.'<br><br><br><b class="highlight floatRight">'.$tempTag.'</b>';
 			$blogHTML = $blogHTML.'<br></p></blockquote><br><br>';
 			
 			$blogsHTML=$blogsHTML.$blogHTML;
