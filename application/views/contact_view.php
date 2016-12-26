@@ -34,7 +34,7 @@
     <ul id="menu" class="four">
       <li><a href="<?php echo base_url();?>index.php/change/showIndex" title="An intro to Simple Life"><span class="big">I</span>ntro</a></li>
       <li><a href="<?php echo base_url();?>index.php/change/showContent" title="Coding tips"><span class="big">C</span>ontent</a></li>
-      <li><a href="<?php echo base_url(); ?>index.php/change/showWrite" title="See the tags in action" class="here"><span class="big">W</span>rite</a></li>
+      <li><a href="<?php echo base_url(); ?>index.php/change/showWrite" title="See the tags in action"><span class="big">W</span>rite</a></li>
       <li><a href="<?php echo current_url(); ?>" title="Get in touch" class="here"><span class="big">C</span>ontact</a></li>
     </ul>
 
