@@ -1,11 +1,7 @@
-<?
-/**
-*This is a php page to show the apparence of content information page(the second view)
-*@name content_view.php
-*@version 26/12/2016 1.0
-*@author Zeling Wu
-*/
-<html>
+<!-- *This is a php page to show the apparence of content information page(the second view) -->
+<!-- *@name content_view.php -->
+<!-- *@version 26/12/2016 1.0 -->
+<!-- *@author Zeling Wu -->
 <html>
 <head>
 

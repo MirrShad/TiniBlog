@@ -1,10 +1,7 @@
-<?
-/**
-*This is a php page to show the apparence of index information page(the first view)
-*@name index_view.php
-*@version 26/12/2016 1.0
-*@author Zikai Zhou
-*/
+<!-- *This is a php page to show the apparence of index information page(the first view) -->
+<!-- *@name index_view.php -->
+<!-- *@version 26/12/2016 1.0 -->
+<!-- *@author Zikai Zhou -->
 <html>
 <head>
 
