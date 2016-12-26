@@ -1,10 +1,11 @@
-<!-- 
-**************************************************************
-   AUTHOR:  Zikai Zhou
-   DATE:    12/26/2016 
-   PURPOSE: Show the appearance of Introduction page
-**************************************************************
--->
+<?
+/**
+*This is a php page to show the apparence of index information page(the first view)
+*@name index_view.php
+*@version 26/12/2016 1.0
+*@author Zikai Zhou
+*/
+<html>
 <head>
 
   <title>Introduction | Tini Blog</title>
@@ -67,7 +68,7 @@
       </ul>
 
       <p>
-        This design started out as the demo website for the most special features of CodeIgnitor. If you're curious about more info, check out in <a href="https://www.codeigniter.com/user_guide/tutorial/index.html" title="Visit CodeIgnitor tutorial">its tutorial</a>.
+        This design started out as the demo website for the most special features of CodeIgnitor. If you are curious about more info, check out in <a href="https://www.codeigniter.com/user_guide/tutorial/index.html" title="Visit CodeIgnitor tutorial">its tutorial</a>.
       </p>
 
 

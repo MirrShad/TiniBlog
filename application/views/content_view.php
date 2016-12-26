@@ -1,4 +1,12 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<?
+/**
+*This is a php page to show the apparence of content information page(the second view)
+*@name content_view.php
+*@version 26/12/2016 1.0
+*@author Zeling Wu
+*/
+<html>
+<html>
 <head>
 
 

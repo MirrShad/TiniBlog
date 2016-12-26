@@ -1,10 +1,11 @@
-<!-- 
-**************************************************************
-   AUTHOR:  Lijun He
-   DATE:    12/26/2016 
-   PURPOSE: Show the appearance of Contact page
-**************************************************************
--->
+<?
+/**
+*This is a php page to show the apparence of contact information (the forth view)
+*@name contact_view.php
+*@version 26/12/2016 1.0
+*@author Lijun He
+*/
+<html>
 <head>
 
   <title>Contact | Tini Blog</title>
@@ -46,24 +47,24 @@
     <p>Lijun He<br/>
     	Tell:(+49)1631710669<br/>
     	Apartment 1004<br/>
-		  Maria-Mitchell-Strasse 2-4<br/>
-		  23562 Luebeck
+		Maria-Mitchell-Strasse 2-4<br/>
+		23562 Luebeck
     </p>
     
     
     <p>Zeling Wu<br/>
     	Tell:(+49)1631710664<br/>
     	Apartment 1206<br/>
-		  Maria-Mitchell-Strasse 2-4<br/>
-		  23562 Luebeck
+		Maria-Mitchell-Strasse 2-4<br/>
+		23562 Luebeck
     </p>
     
     
     <p>Zikai Zhou<br/>
     	Tell:(+49)15779808837<br/>
     	Apartment 1212<br/>
-		  Maria-Mitchell-Strasse 2-4<br/>
-		  23562 Luebeck
+		Maria-Mitchell-Strasse 2-4<br/>
+		23562 Luebeck
     </p>
     
      </div>

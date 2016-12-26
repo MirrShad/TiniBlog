@@ -1,16 +1,20 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
-/*
-* 计算控制器，类名首字母必须大写，所有的控制器必须继承自CI_Controller类
+
+/**
+* This is the starting point of the whole project
+* @author ZelingWu
+* @version 26/12/2016  1.0
 */
 class index extends CI_Controller {
-	// 构造方法
+	
 	function __construct() {
 		parent::__construct();
-	}// 默认方法
+	}
 	
+	//In this function we load the index_view on the page
 	function index() {
 		$this->load->helper(array('html', 'url'));
-		//加载视图   
+		  
 		$this->load->view('index_view');
 	}
 }

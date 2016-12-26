@@ -1,4 +1,11 @@
 <?php
+/**
+*This ia a chass in model which has some function the control the database
+*@name database.php
+*@version 26/12/2016 1.0
+*@author Zeling Wu && Lijun He
+*@module the class Database is contained in CI_Model
+*/
 class Database extends CI_Model {
 
 	function __construct()
@@ -7,6 +14,11 @@ class Database extends CI_Model {
 		$this->load->database();
 	}
 	
+	/*
+	*This is a function to get all the Blogs from database
+	*@param no parameter
+	*@return array $blogs which is the information about the blogs 
+	*/
 	function getAllBlogs()
 	{
 		$blogs = array();
@@ -26,6 +38,11 @@ class Database extends CI_Model {
 		return $blogs;
 	}
 	
+	/*
+	*This is a function to add  new Blog into database
+	*@param array @newBlog which is an array contains string tag, string context, string image(the imagepath), bool imagepath(if exist the imagepath)
+	*@return array
+	*/
 	public function addNewBlog($newBlog)
 	{
 		$query = $this->db->query('SELECT MAX(ID) AS max FROM articles');
@@ -52,12 +69,22 @@ class Database extends CI_Model {
 		return array($this->db->affected_rows(),$insertID);
 	}
 	
+	/*
+	*This is a function to delete a Blog from database
+	*@param array @BlogID 
+	*@return array
+	*/
 	public function deleteBlog($BlogID)
 	{
 		$this->db->delete('articles', array('ID' => $BlogID));
 		return $this->db->affected_rows();
 	}
 	
+	/*
+	*This is a function to close database
+	*@param no parameter
+	*@return no return
+	*/
 	function close()
 	{
 		$this->db->close();
