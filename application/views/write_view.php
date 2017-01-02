@@ -71,7 +71,7 @@
           <input type="reset" value="Reset" class="button"/>
         </p>
 
-    </form>
+
     </div>
 
   </div>
