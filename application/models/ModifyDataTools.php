@@ -52,6 +52,17 @@ class ModifyDataTools extends CI_Model {
 				$blogHTML = $blogHTML.'</a>';
 			}
 			$blogHTML = $blogHTML.$blog['TEXT'];
+			if(str_word_count($blogHTML.$blog['TEXT'])<15)
+			{
+				$blogHTML = $blogHTML.'<br><br><br><br>';
+			}else if(str_word_count($blogHTML.$blog['TEXT'])<30)
+			{
+				$blogHTML = $blogHTML.'<br><br><br>';
+			}else if(str_word_count($blogHTML.$blog['TEXT'])<40)
+			{
+				$blogHTML = $blogHTML.'<br><br>';
+			}
+			
 			$blogHTML = $blogHTML.'<br><b class="highlight floatRight">'.$tempTag.'</b>';
 			$blogHTML = $blogHTML.'<br></p></blockquote><br><br>';
 			
