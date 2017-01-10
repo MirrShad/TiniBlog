@@ -36,8 +36,6 @@ class Change extends CI_Controller {
 		$data = $this->ModifiedData->getAllBlogsOnContentPage();
 		$this->load->helper(array('html', 'url'));
 		$this->load->view('content_view',$data);
-		
-		//$this->Database->close();
 	}
 	
 	
