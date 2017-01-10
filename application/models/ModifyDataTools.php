@@ -3,7 +3,7 @@
 *This ia a chass in model which contains some tools to modify date
 *@name modifyDataTools.php
 *@version 26/12/2016 1.0
-*@author Lijun He && Zeling Wu
+*@author Lijun He && Zeling Wu && Zikai Zhou
 *@module the class ModifyDataTools is contained in CI_Model
 */
 class ModifyDataTools extends CI_Model {
@@ -47,8 +47,7 @@ class ModifyDataTools extends CI_Model {
 					'class' => 'floatLeft',
 				);
 				$blogHTML=$blogHTML.img($image_properties);
-				
-				
+								
 				$blogHTML = $blogHTML.'</a>';
 			}
 			$blogHTML = $blogHTML.$blog['TEXT'];

@@ -40,7 +40,7 @@
     <div id="page">
 
     <h1>Contact Info</h1>
-    
+
     <p>Lijun He<br/>
     	Tell:(+49)1631710669<br/>
     	Apartment 1004<br/>
@@ -71,5 +71,3 @@
 </div>
  
 </body>
- 
-</html>

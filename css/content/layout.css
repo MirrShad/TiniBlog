@@ -1,6 +1,6 @@
 /**************************************************************
-   AUTHOR:  Pat Heard (fullahead.org)
-   DATE:    2006.09.12 
+   AUTHOR:  Zikai Zhou && Zeling Wu
+   DATE:    2016.12.26 
    PURPOSE: Controls the layout of the site and styles
             the menus
  **************************************************************/
@@ -307,13 +307,13 @@ ul.bigLinks li a:hover span.desc {
   color: #512103;
 }
 
-/*
+
 .greenBg {
   padding: 0 10px;
   background-color: #F1FFE3;
   border-bottom: 1px solid #B8E78B;
 }
-*/
+
 .highlight {
   padding: 1px 2px;
   background: #D9F5EC;
