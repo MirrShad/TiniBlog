@@ -1,7 +1,7 @@
 <!-- *This is a php page to show the apparence of write information page(the third view) -->
 <!-- *@name write_view.php -->
 <!-- *@version 26/12/2016 1.0 -->
-<!-- *@author Lijun He -->
+<!-- *@author Lijun He， Zikai Zhou -->
 <html>
 <head>
 

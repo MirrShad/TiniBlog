@@ -65,7 +65,7 @@
       </ul>
 
       <p>
-        This design started out as the demo website for the most special features of CodeIgnitor. If you are curious about more info, check out in <a href="https://www.codeigniter.com/user_guide/tutorial/index.html" title="Visit CodeIgnitor tutorial">its tutorial</a>.
+        This design started out as the demo website for the most special features of CodeIgnitor. If you are curious about more info, check out in <a href="https://www.codeigniter.com/user_guide/tutorial/index.html" title="Visit CodeIgnitor tutorial" target="_blank">its tutorial</a>.
       </p>
 
 
