@@ -49,9 +49,21 @@ class ModifyDataTools extends CI_Model {
 				$blogHTML=$blogHTML.img($image_properties);
 								
 				$blogHTML = $blogHTML.'</a>';
+				
+				if(str_word_count($blogHTML.$blog['TEXT'])<15)
+				{
+					$blogHTML = $blogHTML.'<br><br><br><br>';
+				}else if(str_word_count($blogHTML.$blog['TEXT'])<30)
+				{
+					$blogHTML = $blogHTML.'<br><br><br>';
+				}else if(str_word_count($blogHTML.$blog['TEXT'])<40)
+				{
+					$blogHTML = $blogHTML.'<br><br>';
+				}
 			}
 			$blogHTML = $blogHTML.$blog['TEXT'];
-			$blogHTML = $blogHTML.'<br><br><br><b class="highlight floatRight">'.$tempTag.'</b>';
+			$this->load->helper('url');
+			$blogHTML = $blogHTML.'<br><a class="floatRight" href='.base_url('index.php/BlogChange/deleteBlog/'.$blog['ID']) .'>delete</a><b class="highlight floatLeft">'.$tempTag.'</b>';
 			$blogHTML = $blogHTML.'<br></p></blockquote><br><br>';
 			
 			$blogsHTML=$blogsHTML.$blogHTML;
