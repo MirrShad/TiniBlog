@@ -60,9 +60,12 @@
           <textarea name="context" rows="20" cols="20" class="width50"><?php echo set_value('context'); ?></textarea>
         </p>
 
-		<p>
+		    <p>
           <label>Image</label>
-          <input type="file" name="userfile" size="20" />
+          <span id="uploadpicture">
+          <input type="file" name="userfile" size="20" id="choosepicture" />
+          <a>Choose Picture</a>
+          </span>
         </p>
 		
         <p>
