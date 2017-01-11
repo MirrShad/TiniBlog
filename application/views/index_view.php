@@ -47,12 +47,12 @@
 
       <h1>Introduction</h1>
       <p align="justify">
-        <a href="http://www.deutschlandstipendium.de/intern/system/upload/images/FH_Luebeck.jpg" title="FHL, http://www.deutschlandstipendium.de/intern/system/upload/images/FH_Luebeck.jpg, last access date 12/24/2016"><img src="<?php echo base_url("images/content/photos/fhl.jpg"); ?>" alt="Adirondack Stream" class="floatLeft"/></a>
+        <a href="http://www.deutschlandstipendium.de/intern/system/upload/images/FH_Luebeck.jpg" title="FHL, http://www.deutschlandstipendium.de/intern/system/upload/images/FH_Luebeck.jpg, last access date 12/24/2016" target="_blank"><img src="<?php echo base_url("images/content/photos/fhl.jpg"); ?>" alt="Adirondack Stream" class="floatLeft"/></a>
         Here you can write your daily emotions. No matter what your have experienced, you can record your feelings in the <a href="<?php echo base_url();?>index.php/change/showWrite" title="Record your feelings now!">Write</a>, but sometimes, all you really need is just to sit down and read your life in the <a href="<?php echo base_url(); ?>index.php/change/showContent" title="Recall your life experience">Content</a>.
       </p>
 
       <p align="justify">
-        <a href="https://www.codeigniter.com/" title="CodeIgniter, http://phoenixcoded.com/images/codeigniter_logo.png, last access date 12/24/2016"><img src="<?php echo base_url("images/content/photos/codeigniter_logo.png"); ?>" alt="Inside Alice's Cabin" class="floatRight"/></a>
+        <a href="https://www.codeigniter.com/" title="CodeIgniter, http://phoenixcoded.com/images/codeigniter_logo.png, last access date 12/24/2016" target="_blank"><img src="<?php echo base_url("images/content/photos/codeigniter_logo.png"); ?>" alt="Inside Alice's Cabin" class="floatRight"/ ></a>
         CodeIgniter is an open source Application Development Framework - a toolkit - for people who build web sites using PHP. Its goal is to enable you to develop projects much faster by providing a rich set of libraries for commonly needed tasks, as well as a simple interface and logical structure to access these libraries.
         <acronym title="Reference: https://www.codeigniter.com/user_guide/general/welcome.html, 12/25/2016">[1]</acronym>
       </p>
