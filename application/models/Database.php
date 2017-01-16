@@ -6,6 +6,7 @@
 *@author Zeling Wu && Lijun He
 *@module the class Database is contained in CI_Model
 */
+
 class Database extends CI_Model {
 
 	function __construct()

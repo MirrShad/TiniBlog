@@ -25,13 +25,13 @@ class Test extends CI_Controller {
 		//test Database.php
 		/*test add new Blog into database*/
 		$this->load->model('Database');//connect database
-		$addResult = $this->Database->addNewBlog(array('tag' => 1,'context' => "test"));
-		echo $this->unit->run(1, $addResult[0],'test Database.php addNewBlog');
+		$addResult = $this->Database->addNewBlog(array('tag' => 1,'context' => "test",'imagePath'=>FALSE));
+		echo $this->unit->run($addResult[0], 1,'test Database.php addNewBlog');
 		
 		/*text delete a Blog*/
 		$this->load->model('Database');//connect database
 		$deleteResult = $this->Database->deleteBlog($addResult[1]);
-		echo $this->unit->run(1, $deleteResult,'test Database.php deleteBlog');
+		echo $this->unit->run($deleteResult, 1,'test Database.php deleteBlog');
 		
 		/*close database*/
 		$this->Database->close();
